@@ -43,7 +43,7 @@ function getWeather(lat, lon) {
 }
 
 function getCoordinates(city, state) {
-    var geocodeApi = "http://api.openweathermap.org/geo/1.0/direct?q=" + city + ",US-" + state 
+    var geocodeApi = "https://api.openweathermap.org/geo/1.0/direct?q=" + city + ",US-" + state 
     + ",US&limit=5&appid=b9ec11f0d49180f28dafbc63cb0ffc2a";
     fetch(geocodeApi)
         .then(function(response) {
